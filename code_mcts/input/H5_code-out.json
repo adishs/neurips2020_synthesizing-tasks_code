@@ -1,0 +1,32 @@
+{
+    "type": "run",
+    "children": [
+        {
+            "type": "move"
+        },
+        {
+            "type": "turn_left"
+        },
+        {
+            "type": "repeat_until_goal(bool_goal)",
+            "children": [
+                {
+                    "type": "move"
+                },
+                {
+                    "type": "if(bool_path_right)",
+                    "children": [
+                        {
+                            "type": "do",
+                            "children": [
+                                {
+                                    "type": "turn_right"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

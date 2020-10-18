@@ -1,0 +1,28 @@
+{
+    "type": "run",
+    "children": [
+        {
+            "type": "put_marker"
+        },
+        {
+            "type": "while(bool_path_ahead)",
+            "children": [
+                {
+                    "type": "move"
+                },
+                {
+                    "type": "turn_left"
+                },
+                {
+                    "type": "move"
+                },
+                {
+                    "type": "turn_right"
+                },
+                {
+                    "type": "put_marker"
+                }
+            ]
+        }
+    ]
+}
